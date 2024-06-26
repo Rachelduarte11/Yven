@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ @font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  }
+body {
+    background-image: url('/src/images/background/Hero-Stack.png')!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif; 
+}
+body {
+    background-color: var(--secondary-color);
+}
+
+p{
+  font-weight: 200;
+}
+
+
+/* About us */
+.title-section-nosotros {
+  position: relative;
+}
+
+.background-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 0;
+  object-fit: cover;
+}
+
+.val-noso {
+  position: relative;
+  z-index: 10;
+  font-size: 64px;
+  font-weight: 300;    
+  font-weight: 400;
+}
+
+.card-nosotros {
+  padding: 30px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 0.25px 0px rgba(255, 255, 255, 0.50) inset;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 16px; /* Add margin bottom to separate cards on small screens */
+}
+
+.card-nosotros img {
+  width: 70px;
+  height: 70px;
+  box-shadow: 0px 0px 18.227333068847656px rgba(149, 37, 201, 0.75);
+}
+
+.card-content-nosotros {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.card-title {
+  align-self: stretch;
+  color: #ECECEC;
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  word-wrap: break-word;
+}
+
+.card-description {
+  align-self: stretch;
+  color: #ECECEC;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.card-footer {
+  padding-top: 8px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.card-footer .view-tokens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-footer .view-tokens div {
+  color: white;
+  font-size: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-decoration: underline;
+  line-height: 12px;
+  word-wrap: break-word;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .card-nosotros {
+      width: 100%; /* Full width for smaller screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-nosotros {
+      width: calc(50% - 1.5rem); /* Half width with spacing */
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-valores .card-nosotros {
+      width: calc(33.3333% - 1.5rem); /* One third width with spacing */
+  }
+}
+

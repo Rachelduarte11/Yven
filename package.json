@@ -4,17 +4,40 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "deploy": "gh-pages -d dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --open --config webpack.config.js",
+    "build": "webpack --mode production --config webpack.config.js",
+    "sort": "npx prettier --write src",
+    "dev": "nodemon --watch src --exec \"webpack serve --open --config webpack.config.js\""
   },
   "keywords": [],
-  "author": "",
+  "author": "Yven",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "autoprefixer": "^10.4.19",
+    "babel-loader": "^9.1.3",
+    "babel-plugin-prismjs": "^2.1.0",
+    "css-loader": "^6.11.0",
     "gh-pages": "^5.0.0",
+    "glob": "^10.4.2",
+    "html-loader": "^5.0.0",
+    "html-webpack-partials-plugin": "^0.8.0",
     "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "nodemon": "^3.1.4",
+    "path": "^0.12.7",
+    "postcss": "^8.4.38",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.4",
     "webpack": "^5.92.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.13",
+    "flowbite": "^2.3.0"
   }
 }
