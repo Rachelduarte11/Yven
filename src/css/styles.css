@@ -9,11 +9,11 @@
 
   }
 body {
-    background-image: url('/src/images/background/Hero-Stack.png')!important;
+    /* background-image: url('/src/images/background/Hero-Stack.png')!important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
-    background-attachment: fixed;
+    background-attachment: fixed; */
     font-family: 'Montserrat', Arial, Helvetica, sans-serif; 
 }
 body {
