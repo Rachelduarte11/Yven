@@ -2,7 +2,10 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./src/**/*.{html,js}",
+    'node_modules/preline/dist/*.js',
+  ],
   theme: {
     fontFamily: {
       satoshi: ['Satoshi', 'sans-serif'],
@@ -10,7 +13,6 @@ module.exports = {
     extend: {
       
       colors: {
-        current: 'currentColor',
         transparent: 'transparent',
         white: '#FFFFFF',
         black: '#1C2434',
@@ -42,7 +44,7 @@ module.exports = {
         success: '#219653',
         danger: '#D34053',
         warning: '#FFA70B',
-        'bg_dark': '#201A30',
+        'dark': '#0B0121',
         'dark-transparent': 'rgba(27, 27, 27, 0.6)', 
         'light-color': '#F8F8F8',
         'primary': '#370C94',
@@ -206,9 +208,8 @@ module.exports = {
         1: '1',
       },
      backgroundImage:{
-      background: "url('/src/images/background/Hero-Stack.svg')",
-      dashboard: "url('/src/images/background/dashboard.svg')",
-      video: "url('../images/video/video.png')",
+      'gradient-to-tl': 'radial-gradient(farthest-corner at 0% 100%, #4442B6ff 0%, #12003Aff 100%), linear-gradient(to bottom right, #0B0121ff 0%, #370C94ff 80%), conic-gradient(from 0deg at 50% 50%, #ff0000ff 0%, #0000ffff 100%)',
+      
      },
      
       borderRadius: {
@@ -223,9 +224,7 @@ module.exports = {
       height: {
         '128': '32rem',
       },
-      content: {
-        'icon-copy': 'url("../images/icon/icon-copy-alt.svg")',
-      },
+     
       transitionProperty: { width: 'width', stroke: 'stroke' },
       borderWidth: {
         6: '6px',
@@ -313,6 +312,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('preline/plugin')
   ],
 }

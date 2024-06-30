@@ -2,18 +2,15 @@
 
 //Boton brillante reutilizable
 
-import { createButton } from './buttons.js';
+import { createButton } from './components/buttons.js';
 import "flatpickr/dist/flatpickr.min.css";
-import "../css/satoshi.css";
 import "../css/styles.css";
+
 
 import Alpine from "alpinejs";
 import persist from "@alpinejs/persist";
 import flatpickr from "flatpickr";
-import chart01 from "./components/chart-01";
-import chart02 from "./components/chart-02";
-import chart03 from "./components/chart-03";
-import chart04 from "./components/chart-04";
+
 import map01 from "./components/map-01";
 
 Alpine.plugin(persist);
@@ -69,3 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const card1= document.getElementById('card-h-1');
+  card1.innerHTML= createCardTemplate(imageUrl='images/fiesta1.jpeg', title= 'Bodas', suppliers='205' )
+})

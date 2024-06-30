@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Charts | TailAdmin - Tailwind CSS Admin Dashboard Template</title>
+    <title>Categories</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://preline.co/assets/css/main.min.css">
+    <script src="https://kit.fontawesome.com/812c8ee19a.js"></script>
+    <script src="https://kit.fontawesome.com/812c8ee19a.js"></script>
   </head>
 
   <body
-    x-data="{ page: 'Chart', 'loaded': true, 'darkMode': true, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }"
+    x-data="{ page: 'categories', 'loaded': true, 'darkMode': true, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }"
     x-init="
           darkMode = JSON.parse(localStorage.getItem('darkMode'));
           $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
@@ -29,37 +33,21 @@
         class="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden"
       >
         <!-- ===== Header Start ===== -->
-        <include src="partials/header.html" />
+        <include src="partials/dashboards/header.html" />
         <!-- ===== Header End ===== -->
 
         <!-- ===== Main Content Start ===== -->
         <main>
-          <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
-            <!-- Breadcrumb Start -->
-            <div
-              class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
-            >
-              <h2 class="text-title-md2 font-bold text-black dark:text-white">
-                Chart
-              </h2>
-
-              <nav>
-                <ol class="flex items-center gap-2">
-                  <li>
-                    <a class="font-medium" href="dashboard.html">Dashboard /</a>
-                  </li>
-                  <li class="font-medium text-primary">Chart</li>
-                </ol>
-              </nav>
-            </div>
-            <!-- Breadcrumb End -->
-
-          </div>
+            <div class="p-6">
+            <include src="partials/dashboards/tabs-categories.html"></include>
+        </div>
         </main>
         <!-- ===== Main Content End ===== -->
       </div>
       <!-- ===== Content Area End ===== -->
     </div>
-    <!-- ===== Page Wrapper End ===== -->
+     <!-- JS PLUGINS -->
+     <!-- Required plugins -->
+     <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
   </body>
 </html>

@@ -37,7 +37,14 @@
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
+    "@alpinejs/persist": "^3.14.1",
+    "@nextui-org/card": "^2.0.31",
+    "@preline/tabs": "^2.3.0",
     "@tailwindcss/typography": "^0.5.13",
-    "flowbite": "^2.3.0"
+    "alpinejs": "^3.14.1",
+    "flatpickr": "^4.6.13",
+    "flowbite": "^2.3.0",
+    "framer-motion": "^11.2.12",
+    "preline": "^2.3.0"
   }
 }

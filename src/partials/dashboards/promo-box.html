@@ -1,0 +1,111 @@
+<div>
+    <div class="flex flex-row justify-between items-center place-content-center">
+    <h2 class="text-4xl text-light-color font-montserrat tracking-wide">Promociones</h2>
+    <p class="text-1xl text-light-color text-light-color font-montserrat">Ver más</p>
+</div>
+<div class="w-full gap-3 grid grid-cols-12 grid-rows-2  mx-auto my-3">
+    <!-- First Card -->
+    <div class="relative col-span-12 rounded-lg sm:col-span-4 h-[300px]">
+      <div class="absolute z-10 top-1 flex flex-col items-start p-4">
+        <p class="text-tiny text-white/60 uppercase font-bold">What to watch</p>
+        <h4 class="text-white font-medium text-large">Stream the Acme event</h4>
+      </div>
+      <img src="https://nextui.org/images/card-example-4.jpeg" alt="Card background" class="rounded-[20px]  z-0 w-full h-full object-cover"/>
+    </div>
+
+    <!-- Second Card -->
+    <div class="relative col-span-12 rounded-md sm:col-span-4 h-[300px]">
+      <div class="absolute z-10 top-1 flex flex-col items-start p-4">
+        <p class="text-tiny text-white/60 uppercase font-bold">Plant a tree</p>
+        <h4 class="text-white font-medium text-large">Contribute to the planet</h4>
+      </div>
+      <img src="https://nextui.org/images/card-example-3.jpeg" alt="Card background" class="rounded-[20px] z-0 w-full h-full object-cover"/>
+    </div>
+
+    <!-- Third Card -->
+    <div class="relative col-span-12 rounded-md sm:col-span-4 h-[300px]">
+      <div class="absolute z-10 top-1 flex flex-col items-start p-4">
+        <p class="text-tiny text-white/60 uppercase font-bold">Supercharged</p>
+        <h4 class="text-white font-medium text-large">Creates beauty like a beast</h4>
+      </div>
+      <img src="https://nextui.org/images/card-example-2.jpeg" alt="Card background" class="rounded-[20px] z-0 w-full h-full object-cover"/>
+    </div>
+
+    <!-- Fourth Card -->
+    <div class="relative w-full h-[300px] col-span-12 sm:col-span-5">
+      <div class="absolute z-10 top-1 flex flex-col items-start p-4">
+        <p class="text-tiny text-white/60 uppercase font-bold">New</p>
+        <h4 class="text-black font-medium text-2xl">Acme camera</h4>
+      </div>
+      <img src="https://nextui.org/images/card-example-6.jpeg" alt="Card example background" class="rounded-[20px] z-0 w-full h-full  object-cover"/>
+      <div class="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between p-4 flex rounded-b-[20px] w-full">
+        <div>
+          <p class="text-black text-tiny">Available soon.</p>
+          <p class="text-black text-tiny">Get notified.</p>
+        </div>
+        <button class="text-tiny bg-blue-500 text-white rounded-full px-4 py-1">Notify Me</button>
+      </div>
+    </div>
+
+    <!-- Fifth Card -->
+    <div class="relative w-full h-[300px] col-span-12 sm:col-span-7">
+      <div class="absolute z-10 top-1 flex flex-col items-start p-4">
+        <p class="text-tiny text-white/60 uppercase font-bold">Your day your way</p>
+        <h4 class="text-white/90 font-medium text-xl">Your checklist for better sleep</h4>
+      </div>
+      <img src="https://nextui.org/images/card-example-5.jpeg" alt="Relaxing app background" class="rounded-[20px] z-0 w-full h-full object-cover"/>
+      <div class="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100 p-4 flex justify-between w-full">
+        <div class="flex gap-2 items-center">
+          <img src="https://nextui.org/images/breathing-app-icon.jpeg" alt="Breathing app icon" class="rounded-full w-10 h-11 bg-black"/>
+          <div class="flex flex-col">
+            <p class="text-tiny text-white/60">Breathing App</p>
+            <p class="text-tiny text-white/60">Get a good night's sleep.</p>
+          </div>
+        </div>
+        <button class="bg-white text-black rounded-full px-4 py-1">Get App</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="module">
+    import { motion, AnimatePresence } from "https://cdn.skypack.dev/framer-motion";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = {
+        hidden: { opacity: 1, scale: 0 },
+        visible: {
+          opacity: 1,
+          scale: 1,
+          transition: {
+            delayChildren: 0.3,
+            staggerChildren: 0.2,
+          },
+        },
+      };
+
+      const item = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+          y: 0,
+          opacity: 1,
+        },
+      };
+
+      const containerElement = document.querySelector(".max-w-[1100px]");
+      const cards = containerElement.querySelectorAll(".relative");
+
+      containerElement.classList.add("motion-safe:visible");
+      cards.forEach((card) => {
+        card.classList.add("motion-safe:opacity-0", "motion-safe:scale-0");
+      });
+
+      setTimeout(() => {
+        containerElement.classList.replace("motion-safe:visible", "motion-safe:hidden");
+
+        cards.forEach((card) => {
+          card.classList.replace("motion-safe:opacity-0", "motion-safe:opacity-1");
+          card.classList.replace("motion-safe:scale-0", "motion-safe:scale-1");
+        });
+      }, 300);
+    });
+  </script>

@@ -9,15 +9,15 @@
 
   }
 body {
-    /* background-image: url('/src/images/background/Hero-Stack.png')!important;
+    background-image: url('/src/images/background/dashboard.png')!important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
-    background-attachment: fixed; */
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif; 
+    background-attachment: fixed; 
+    font-family:'Montserrat', Arial, Helvetica, sans-serif; 
 }
-body {
-    background-color: var(--secondary-color);
+body .dashboard{
+  background: linear-gradient(to top left, #C41BA2ff 0%, #370C94ff 80%);
 }
 
 p{
