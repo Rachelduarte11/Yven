@@ -27,6 +27,7 @@ cd yven-eventos
 npm install
 ```
 ## File Structure
+```bash
 YVEN EVENTOS/
 ├── docs/                     # Documentation files
 ├── node_modules/             # Node.js modules
@@ -41,8 +42,6 @@ YVEN EVENTOS/
 │       ├── jquery.js         # jQuery library
 │       ├── menu-flex.js      # JavaScript for menu flexibility
 │       └── us-aa-en.js       # US Accessibility Enhancements
-├── pages/                    # HTML pages
-    |──dashboard/             # Dashboard ages
 ├── partials/                 # Partial HTML templates
 │   ├── dashboards/           # Dashboard templates
 │   └── sections/             # Section templates
@@ -56,3 +55,4 @@ YVEN EVENTOS/
 ├── tailwind.config.js        # Tailwind CSS configuration
 └── webpack.config.js         # Webpack configuration
 
+```
