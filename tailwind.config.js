@@ -2,13 +2,14 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  mode: 'jit',
   content: [
     "./src/**/*.{html,js}",
     'node_modules/preline/dist/*.js',
   ],
   theme: {
     fontFamily: {
-      satoshi: ['Satoshi', 'sans-serif'],
+      montserrat: ['Montserrat', 'sans-serif'],
     },
     extend: {
       
