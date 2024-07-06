@@ -109,6 +109,11 @@ module.exports = {
       filename: 'style.css',
       chunkFilename: 'style.css',
     }),
+    ...generateHTMLPlugins(),
+    new MiniCssExtractPlugin({
+      filename: 'dashboard.css',
+      chunkFilename: 'dashboard.css',
+    }),
   ],
   output: {
     filename: 'bundle.js',

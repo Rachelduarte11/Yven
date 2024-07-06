@@ -208,10 +208,6 @@ module.exports = {
         9: '9',
         1: '1',
       },
-     backgroundImage:{
-      'gradient-to-tl': 'radial-gradient(farthest-corner at 0% 100%, #4442B6ff 0%, #12003Aff 100%), linear-gradient(to bottom right, #0B0121ff 0%, #370C94ff 80%), conic-gradient(from 0deg at 50% 50%, #ff0000ff 0%, #0000ffff 100%)',
-      
-     },
      
       borderRadius: {
         'none': '0',
