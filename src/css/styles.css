@@ -99,6 +99,11 @@ p{
 }
 
 /* Media Queries for Responsive Design */
+@media (max-width: 750px) {
+  .menu-social-media{
+    display: none;
+  }
+}
 @media (max-width: 1024px) {
   .card-nosotros {
       width: 100%; /* Full width for smaller screens */
@@ -115,5 +120,5 @@ p{
   .section-valores .card-nosotros {
       width: calc(33.3333% - 1.5rem); /* One third width with spacing */
   }
-}
 
+}
