@@ -122,3 +122,43 @@ p{
   }
 
 }
+
+/*TESTIMONIALS USER */
+.slider-container-resenas {
+  position: relative;
+  overflow: hidden;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.slider-resenas {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.card-resenas {  
+  flex: 0 0 calc(100% / 1);
+  min-width: calc(100% / 1);
+  border-radius: 5px;
+  padding: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1368px) {
+  .card-resenas {
+    flex: 0 0 calc(100% / 1); /* Muestra 3 cartas a la vez */
+    min-width: calc(100% / 1);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-resenas {
+    flex: 0 0 calc(100% / 1); /* Muestra 2 cartas a la vez */
+    min-width: calc(100% / 1);
+  }
+}
+
