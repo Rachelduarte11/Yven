@@ -122,8 +122,7 @@ p{
   }
 
 }
-
-/*TESTIMONIALS USER */
+/* TESTIMONIALS USER */
 .slider-container-resenas {
   position: relative;
   overflow: hidden;
@@ -148,17 +147,16 @@ p{
   align-items: center;
 }
 
-@media screen and (max-width: 1368px) {
+@media screen and (max-width: 1536px) {
   .card-resenas {
-    flex: 0 0 calc(100% / 1); /* Muestra 3 cartas a la vez */
+    flex: 0 0 calc(100% / 1); /* Muestra 1 carta a la vez */
     min-width: calc(100% / 1);
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 1536px) {
   .card-resenas {
-    flex: 0 0 calc(100% / 1); /* Muestra 2 cartas a la vez */
-    min-width: calc(100% / 1);
+    flex: 0 0 calc(100% / 2); /* Muestra 2 cartas a la vez */
+    min-width: calc(100% / 2);
   }
 }
-
