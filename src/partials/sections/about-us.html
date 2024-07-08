@@ -1,39 +1,74 @@
-
-<!-- Valores -->
-<section class="px-2 py-8 md:px-22 mx-auto block">
-    <h2 class="text-white mx-auto text-center text-6xl text-gray-200 font-light md:text-6xl mb-8 relative ">Nosotros</h2>
-    <div class="w-full flex flex-row justify-center flex-wrap md:space-x-4 space-x-2 md:space-y-0 mx-auto ">
-      
-        <div class="md:w-[28%] w-[30%]  p-2 md:p-8" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%); box-shadow: 0px 0.25px 0px rgba(255, 255, 255, 0.50) inset; border-radius: 10px;">
-            <div class="">
-
-                <img src="/src/images/iconos/creatividad.svg" class="md:w-16 w-24"alt="">
+<section class="py-12 lg:px-22 mx-auto block" id="about-us">
+    <h2 class="text-white mx-auto text-center text-6xl text-gray-200 font-light md:text-6xl mb-16 relative">Nosotros</h2>
+    <div class="w-full flex flex-row justify-center flex-wrap space-x-6 md:space-y-0 mx-auto">
+        <div class="md:w-[28%] w-[30%]  md:h-auto h-[200px] p-2 md:p-8 relative" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%); box-shadow: 0px 0.25px 0px rgba(255, 255, 255, 0.50) inset; border-radius: 10px;">
+            <div>
+                <img src="/src/images/iconos/creatividad.svg" class="md:w-16 w-24" alt="">
                 <div class="text-light-color text-1xl md:text-3xl mb-4">Innovación y creatividad</div>
                 <div class="text-gray-200 text-lg hidden md:flex">
-                    YVEN Adopta la innovación y la creatividad en todos los aspectos, desde el
-                    desarrollo de nuevos conceptos hasta la ejecuc.
+                    YVEN Adopta la innovación y la creatividad en todos los aspectos, desde el desarrollo de nuevos conceptos hasta la ejecuc.
                 </div>
+                <a href="#about-us" class="text-blue-500 md:hidden font-medium absolute bottom-2" onclick="showModal('modal1')">Ver más</a>
             </div>
         </div>
-        <div class="md:w-[28%] w-[30%]  p-2 md:p-8" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%); box-shadow: 0px 0.25px 0px rgba(255, 255, 255, 0.50) inset; border-radius: 10px;">
-            <div class="">
-                <img src="/src/images/iconos/social.svg" class="md:w-16 w-24"alt="">
-                <div class="text-light-color text-1xl md:text-3xl mb-4">Responsabilidad social y sostenibilidad</div>
+        <div class="md:w-[28%] w-[30%] md:h-auto h-[200px] p-2 md:p-8 relative" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%); box-shadow: 0px 0.25px 0px rgba(255, 255, 255, 0.50) inset; border-radius: 10px;">
+            <div>
+                <img src="/src/images/iconos/social.svg" class="md:w-16 w-24" alt="">
+                <div class="text-light-color text-1xl md:text-3xl mb-4">Responsabilidad y sostenibilidad</div>
                 <div class="text-gray-200 text-lg hidden md:flex">
-                    Participamos activamente en iniciativas sociales y ambientales que contribuyen al bienestar de
-                    la comunidad y del planeta.
+                    Participamos activamente en iniciativas sociales y ambientales que contribuyen al bienestar de la comunidad y del planeta.
                 </div>
+                <a href="#about-us" class="text-blue-500 md:hidden font-medium absolute bottom-2" onclick="showModal('modal2')">Ver más</a>
             </div>
         </div>
-        <div class="md:w-[28%] w-[30%] p-2 md:p-8" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%); box-shadow: 0px 0.25px 0px rgba(255, 255, 255, 0.50) inset; border-radius: 10px;">
-            <div class="">
-                <img src="/src/images/iconos/enfoque.svg" class="md:w-16 w-24"alt="">
+        <div class="md:w-[28%] w-[30%] md:h-auto h-[200px] p-2 md:p-8 relative" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%); box-shadow: 0px 0.25px 0px rgba(255, 255, 255, 0.50) inset; border-radius: 10px;">
+            <div >
+                <img src="/src/images/iconos/enfoque.svg" class="md:w-16 w-24" alt="">
                 <div class="text-light-color text-1xl md:text-3xl mb-4">Enfoque en el cliente</div>
                 <div class="text-gray-200 text-lg hidden md:flex">
-                    PriorizaMOS las necesidades y la satisfacción de sus clientes durante todo el proceso de
-                    planificación y ejecución del evento. 
+                    PriorizaMOS las necesidades y la satisfacción de sus clientes durante todo el proceso de planificación y ejecución del evento.
                 </div>
+                <a href="#about-us" class="text-blue-500 md:hidden font-medium absolute bottom-2" onclick="showModal('modal3')">Ver más</a>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Modal 1 -->
+<div id="modal1" class="modal fixed inset-0 backdrop-blur-md z-40 bg-opacity-75 backdrop-blur-md flex items-center justify-center p-4 hidden">
+    <div class="bg-primary rounded-lg p-8 max-w-lg w-full">
+        <h3 class="text-xl mb-4 text-light-color">Innovación y creatividad</h3>
+        <p class="text-[18px] text-light-color">YVEN Adopta la innovación y la creatividad en todos los aspectos, desde el desarrollo de nuevos conceptos hasta la ejecución.</p>
+        <button class="mt-4 bg-third text-white px-4 py-2 rounded" onclick="closeModal('modal1')">Cerrar</button>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal2" class="modal fixed inset-0 backdrop-blur-md z-40 bg-opacity-75 backdrop-blur-md flex items-center justify-center p-4 hidden">
+    <div class="bg-primary rounded-lg p-8 max-w-lg w-full">
+        <h3 class="text-xl mb-4 text-light-color">Responsabilidad y sostenibilidad</h3>
+        <p class="text-[18px] text-light-color">Participamos activamente en iniciativas sociales y ambientales que contribuyen al bienestar de la comunidad y del planeta.</p>
+        <button class="mt-4 bg-third text-white px-4 py-2 rounded" onclick="closeModal('modal2')">Cerrar</button>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div id="modal3" class="modal fixed inset-0 backdrop-blur-md z-40 bg-opacity-75 backdrop-blur-md flex items-center justify-center p-4 hidden">
+    <div class="bg-primary rounded-lg p-8 max-w-lg w-full">
+        <h3 class="text-xl mb-4 text-light-color">Enfoque en el cliente</h3>
+        <p class="text-[18px] text-light-color">PriorizaMOS las necesidades y la satisfacción de sus clientes durante todo el proceso de planificación y ejecución del evento.</p>
+        <button class="mt-4 bg-third text-white px-4 py-2 rounded" onclick="closeModal('modal3')">Cerrar</button>
+    </div>
+</div>
+
+ <script>
+    function showModal(id) {
+        document.getElementById(id).style.display = 'flex';
+        document.body.classList.add('modal-open');
+    }
+
+    function closeModal(id) {
+        document.getElementById(id).style.display = 'none';
+        document.body.classList.remove('modal-open');
+    }
+</script> 
