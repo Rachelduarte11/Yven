@@ -4307,8 +4307,8 @@ p{
     padding-top: 7rem;
   }
 
-  .md\:pt-48 {
-    padding-top: 12rem;
+  .md\:pt-32 {
+    padding-top: 8rem;
   }
 
   .md\:text-start {
@@ -4573,8 +4573,8 @@ p{
     padding-left: 2.75rem;
   }
 
-  .xl\:pt-64 {
-    padding-top: 16rem;
+  .xl\:pt-36 {
+    padding-top: 9rem;
   }
 
   .xl\:text-4xl {
