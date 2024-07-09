@@ -1678,6 +1678,10 @@ input[type="range"]::-ms-fill-lower {
   height: 300px;
 }
 
+.h-\[32rem\] {
+  height: 32rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -2202,12 +2206,6 @@ input[type="range"]::-ms-fill-lower {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.875rem * var(--tw-space-x-reverse));
   margin-left: calc(0.875rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -3367,7 +3365,7 @@ p{
   }
 }
 
-/*TESTIMONIALS USER */
+/* TESTIMONIALS USER */
 
 .slider-container-resenas {
   position: relative;
@@ -3393,19 +3391,19 @@ p{
   align-items: center;
 }
 
-@media screen and (max-width: 1368px) {
+@media screen and (max-width: 1536px) {
   .card-resenas {
     flex: 0 0 calc(100% / 1);
-    /* Muestra 3 cartas a la vez */
+    /* Muestra 1 carta a la vez */
     min-width: calc(100% / 1);
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 1536px) {
   .card-resenas {
-    flex: 0 0 calc(100% / 1);
+    flex: 0 0 calc(100% / 2);
     /* Muestra 2 cartas a la vez */
-    min-width: calc(100% / 1);
+    min-width: calc(100% / 2);
   }
 }
 
@@ -3587,11 +3585,6 @@ p{
   background-color: rgb(26 86 219 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-light-color:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 12 148 / var(--tw-bg-opacity));
@@ -3645,11 +3638,6 @@ p{
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(55 12 148 / var(--tw-text-opacity));
-}
-
-.hover\:text-secondary:hover {
-  --tw-text-opacity: 1;
-  color: rgb(196 27 162 / var(--tw-text-opacity));
 }
 
 .hover\:text-third:hover {
@@ -4272,10 +4260,6 @@ p{
     width: 83.333333%;
   }
 
-  .md\:w-\[28\%\] {
-    width: 28%;
-  }
-
   .md\:w-auto {
     width: auto;
   }
@@ -4310,6 +4294,12 @@ p{
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -4601,6 +4591,11 @@ p{
     padding-right: 8rem;
   }
 
+  .xl\:px-48 {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
   .xl\:px-7 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
@@ -4609,6 +4604,16 @@ p{
   .xl\:px-7\.5 {
     padding-left: 1.875rem;
     padding-right: 1.875rem;
+  }
+
+  .xl\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .xl\:py-48 {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
   }
 
   .xl\:pb-1 {
@@ -4689,4 +4694,3 @@ p{
 .rtl\:text-right:where([dir="rtl"], [dir="rtl"] *) {
   text-align: right;
 }
-
