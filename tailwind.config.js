@@ -23,6 +23,7 @@ module.exports = {
         secondary: '#80CAEE',
         stroke: '#ECECEC',
         gray: '#EFF4FB',
+        'gray-blue-light': '#D9D9D9',
         'form-strokedark': '#3d4d60',
         'form-input': '#1d2a39',
         'dark': '#0B0121',
