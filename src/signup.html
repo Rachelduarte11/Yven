@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./images/svg/favicon-yven.svg" type="image/x-icon">
     <title>Iniciar sesión - Yven</title>
     <script src="https://kit.fontawesome.com/b2ac020bc7.js" crossorigin="anonymous"></script>
-    <script src="js/auth/register_validations.js"></script>
+    <script src="/src/js/auth/register_validations.js"></script>
 
 </head>
   <body class="bg-fixed">
@@ -44,33 +44,27 @@
       <hr class="my-4 w-1/2 text-light-color">
     </div>
   
-    <form class="flex flex-col">
-       <label for="" class="text-light-color  text-lg mb-2"> Nombre</label>
-      <input type="text" id="registerName" class="border rounded-md text-white p-2 pl-4 bg-transparent mb-2" placeholder="Ingresa tu nombre" required>
-      
-      <label for="" class="text-light-color text-lg mb-2"> Apellidos</label>
-      <input type="text" id="registerLastname" class="border rounded-md text-white p-2 pl-4 bg-transparent mb-2" placeholder="Ingresa tu pellidos" required>
-   
-      <label for="" class="text-light-color text-lg mb-2">Ingresa tu email</label>
-      <input type="email" id="registerEmail" class="border rounded-md text-white p-2 pl-4 bg-transparent mb-2" placeholder="email@example.com" required>
-     
-      <label for="" class="text-light-color text-lg mb-2">Contraseña</label>
-      <input type="password" id="registerPassword" class="border rounded-md text-white p-2 pl-4 bg-transparent mb-2" placeholder="Registrarse tu contraseña" required>
-     
-      <label for="" class="text-light-color text-lg mb-2">Confirmar contraseña</label>
-      <input type="password" id="registerConfirmPassword" class="border text-white rounded-md p-2 pl-4 bg-transparent mb-2" placeholder="Confirma tu contraseña" required>  
-
-      <div class="flex items-center mt-4">
-        <input type="checkbox" id="registerRememberMe" class="mr-2">
-        <label for="registerRememberMe" class="text-white">Recuérdame</label>
-      </div>
-      
-      <a href="dashboard.html">
+    <form action="../src/php/register.php" method="POST" class="flex flex-col">
+      <label for="registerName" class="text-light-color text-lg mb-2">Nombre</label>
+      <input type="text" id="registerName" name="name" class="border rounded-md text-white p-2 pl-4 bg-transparent mb-2" placeholder="Ingresa tu nombre" required>
+  
+      <label for="registerLastname" class="text-light-color text-lg mb-2">Apellidos</label>
+      <input type="text" id="registerLastname" name="lastname" class="border rounded-md text-white p-2 pl-4 bg-transparent mb-2" placeholder="Ingresa tus apellidos" required>
+  
+      <label for="registerEmail" class="text-light-color text-lg mb-2">Ingresa tu email</label>
+      <input type="email" id="registerEmail" name="email" class="border rounded-md text-white p-2 pl-4 bg-transparent mb-2" placeholder="email@example.com" required>
+  
+      <label for="registerPassword" class="text-light-color text-lg mb-2">Contraseña</label>
+      <input type="password" id="registerPassword" name="password" class="border rounded-md text-white p-2 pl-4 bg-transparent mb-2" placeholder="Ingresa tu contraseña" required>
+  
+      <label for="registerConfirmPassword" class="text-light-color text-lg mb-2">Confirmar contraseña</label>
+      <input type="password" id="registerConfirmPassword" name="confirm_password" class="border text-white rounded-md p-2 pl-4 bg-transparent mb-2" placeholder="Confirma tu contraseña" required>
+  
       <button type="submit" class="w-full bg-third text-white font-bold py-2 mt-4 rounded-lg hover:bg-gray-800 login-color-btn">
-        Registrarse
+          Registrarse
       </button>
-      </a>
-    </form>
+  </form>
+  
 
     <p class="text-center place-content-center mt-4 text-white">¿Ya tienes una cuenta? <a href="signin.html"><span class="create-new-acc ml-2 font-medium text-secondary">Iniciar sesión</span></a></p>
   </div>

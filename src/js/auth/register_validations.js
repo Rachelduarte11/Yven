@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     function validationEmail(event) {
         const USER_KEYBOARD_ACTION_ON_INPUT_EMAIL = event.data;
-        const REGEX_EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const REGEX_EMAIL = /^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° 0-9@.]+$/;
 
         if (!REGEX_EMAIL.test(USER_KEYBOARD_ACTION_ON_INPUT_EMAIL)) {
             Swal.fire({
@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     function validationPassword(event) {
-        const USER_KEYBOARD_ACTION_ON_INPUT_PASSWORD = event.data;
+        const USER_KEYBOARD_ACTION_ON_INPUT_PASSWORD = event.target.value;
         const REGEX_PASSWORD = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
 
         if (!REGEX_PASSWORD.test(USER_KEYBOARD_ACTION_ON_INPUT_PASSWORD)) {
@@ -52,7 +52,7 @@ window.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
-
+    
     function validatePasswordMatch() {
         const password = PASSWORD.value;
         const confirmPassword = CONFIRM_PASSWORD.value;
