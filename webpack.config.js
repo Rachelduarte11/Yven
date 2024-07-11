@@ -121,6 +121,6 @@ module.exports = {
     clean: true,
     assetModuleFilename: '[path][name][ext]',
   },
-  target: 'web', // fix for "browserslist" error message
+  target: 'web',
   stats: 'errors-only', // suppress irrelevant log messages
 }
