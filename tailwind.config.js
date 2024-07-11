@@ -12,7 +12,10 @@ module.exports = {
       montserrat: ['Montserrat', 'sans-serif'],
     },
     extend: {
+      
       colors: {
+        transparent: 'transparent',
+        white: '#FFFFFF',
         black: '#1C2434',
         'black-2': '#010101',
         body: '#64748B',
@@ -166,6 +169,7 @@ module.exports = {
         47.5: '11.875rem',
         75: '18.75rem',
       },
+    
       transitionProperty: { width: 'width', stroke: 'stroke' },
       borderWidth: {
         6: '6px',
@@ -227,8 +231,24 @@ module.exports = {
           '50%': { transform: 'translate3d(0, -100%, 0)' },
         },
       },
+      animation: {
+        linspin: 'linspin 1568.2353ms linear infinite',
+        easespin: 'easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both',
+        'left-spin':
+          'left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both',
+        'right-spin':
+          'right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both',
+        'ping-once': 'ping 5s cubic-bezier(0, 0, 0.2, 1)',
+        rotating: 'rotating 30s linear infinite',
+        topbottom: 'topbottom 60s infinite alternate linear',
+        bottomtop: 'bottomtop 60s infinite alternate linear',
+        'spin-1.5': 'spin 1.5s linear infinite',
+        'spin-2': 'spin 2s linear infinite',
+        'spin-3': 'spin 3s linear infinite',
+      },
     },
     screens: {
+      
       '2xsm': '375px',
       xsm: '425px',
       '3xl': '2000px',
