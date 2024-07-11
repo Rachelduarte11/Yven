@@ -636,8 +636,8 @@ input::placeholder,textarea::placeholder {
   padding: 0;
 }
 
-input[type="time"]::-webkit-calendar-picker-indicator {
-  background: none;
+::-webkit-date-and-time-value {
+  min-height: 1.5em;
 }
 
 select:not([size]) {
@@ -1440,9 +1440,6 @@ input[type="range"]::-ms-fill-lower {
 }
 .ml-8 {
   margin-left: 2rem;
-}
-.mr-10 {
-  margin-right: 2.5rem;
 }
 .mr-16 {
   margin-right: 4rem;
