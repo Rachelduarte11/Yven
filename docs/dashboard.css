@@ -636,8 +636,8 @@ input::placeholder,textarea::placeholder {
   padding: 0;
 }
 
-input[type="time"]::-webkit-calendar-picker-indicator {
-  background: none;
+::-webkit-date-and-time-value {
+  min-height: 1.5em;
 }
 
 select:not([size]) {
@@ -1379,6 +1379,9 @@ input[type="range"]::-ms-fill-lower {
 .mb-10 {
   margin-bottom: 2.5rem;
 }
+.mb-12 {
+  margin-bottom: 3rem;
+}
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -1440,9 +1443,6 @@ input[type="range"]::-ms-fill-lower {
 }
 .ml-8 {
   margin-left: 2rem;
-}
-.mr-10 {
-  margin-right: 2.5rem;
 }
 .mr-16 {
   margin-right: 4rem;
@@ -4417,12 +4417,12 @@ p{
     padding-bottom: 2rem;
   }
 
-  .md\:pt-28 {
-    padding-top: 7rem;
+  .md\:pt-16 {
+    padding-top: 4rem;
   }
 
-  .md\:pt-32 {
-    padding-top: 8rem;
+  .md\:pt-28 {
+    padding-top: 7rem;
   }
 
   .md\:text-start {
@@ -4700,8 +4700,8 @@ p{
     padding-left: 2.75rem;
   }
 
-  .xl\:pt-36 {
-    padding-top: 9rem;
+  .xl\:pt-24 {
+    padding-top: 6rem;
   }
 
   .xl\:text-4xl {
