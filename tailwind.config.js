@@ -23,7 +23,6 @@ module.exports = {
         secondary: '#80CAEE',
         stroke: '#ECECEC',
         gray: '#EFF4FB',
-        'gray-blue-light': '#D9D9D9',
         'form-strokedark': '#3d4d60',
         'form-input': '#1d2a39',
         'dark': '#0B0121',
@@ -169,7 +168,16 @@ module.exports = {
         47.5: '11.875rem',
         75: '18.75rem',
       },
-    
+      zIndex: {
+        999999: '999999',
+        99999: '99999',
+        9999: '9999',
+        999: '999',
+        99: '99',
+        9: '9',
+        1: '1',
+      },
+     
       transitionProperty: { width: 'width', stroke: 'stroke' },
       borderWidth: {
         6: '6px',
