@@ -4530,10 +4530,6 @@ p{
     display: none;
   }
 
-  .lg\:h-auto {
-    height: auto;
-  }
-
   .lg\:max-w-2xl {
     max-width: 42rem;
   }
